@@ -12,9 +12,7 @@ footer {
   font-size: 15px;
   padding: 20px;
   text-align: center;
-  position: fixed;
   width: 100vw;
-  bottom: 0;
 }
 
 .PortDj-Start {
@@ -30,9 +28,8 @@ footer {
 .DjanoPFP {
   border-radius: 100%;
   width: 300px;
-  position: absolute;
-  top: 250px;
-  left: 250px;
+  height: 300px;
+  margin-right: 50px;
 }
 
 .PortSectie1 {
@@ -40,33 +37,67 @@ footer {
   width: 600px;
   border-radius: 25px;
   padding: 15px;
-  position: absolute;
-  left: 600px;
-  top: 200px;
+}
+
+.Flexbox1{
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 30px;
 }
 
 .PortSectie2 {
   background-color: rgb(228, 228, 228);
-  width: 950px;
+  width: 600px;
   border-radius: 25px;
   padding: 15px;
-  position: absolute;
-  left: 250px;
-  top: 675px;
 }
 
 .PortImg {
   width: 300px;
-  position: absolute;
-  left: 800px;
-  top: 710px;
+  height: 150px;
 }
 
-.PortTekst{
-    width: 450px;
+.Flexbox2{
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 30px;
 }
 
-.PortFooter {
-  position: relative;
-  top: 850px;
+.Projecten{
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+}
+
+.ProjectButton{
+  padding: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+  text-align: center;
+  transition:500ms ease;
+}
+
+.FooterButton{
+  padding: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: darkblue;
+  border-color: white;
+  transition:500ms ease;
+  margin-left: 5px;
+}
+
+a{
+  color: black;
+}
+
+.FooterLink{
+  color: white;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
