@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  text-decoration: none;
+}
+
+footer {
+  background-color: darkblue;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+}
+
+.PortDj-Start {
+  padding: 25px;
+  text-align: center;
+  position: relative;
+
+  background-color: darkblue;
+  color: white;
+  width: 100vw;
+}
+
+.DjanoPFP {
+  border-radius: 100%;
+  width: 300px;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+
+.PortSectie1 {
+  background-color: rgb(228, 228, 228);
+  width: 600px;
+  border-radius: 25px;
+  padding: 15px;
+  position: absolute;
+  left: 600px;
+  top: 200px;
+}
+
+.PortSectie2 {
+  background-color: rgb(228, 228, 228);
+  width: 950px;
+  border-radius: 25px;
+  padding: 15px;
+  position: absolute;
+  left: 250px;
+  top: 675px;
+}
+
+.PortImg {
+  width: 300px;
+  position: absolute;
+  left: 800px;
+  top: 710px;
+}
+
+.PortTekst{
+    width: 450px;
+}
+
+.PortFooter {
+  position: relative;
+  top: 850px;
+}
