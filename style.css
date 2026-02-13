@@ -90,17 +90,10 @@ height: 20vw;
   border-radius: 10px;
   border-width: 1px;
   background-color: darkblue;
+  color: white;
   border-color: white;
   transition:500ms ease;
   margin-left: 5px;
-}
-
-a{
-  color: black;
-}
-
-.FooterLink{
-  color: white;
 }
 
 button:hover{
