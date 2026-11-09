@@ -20,25 +20,43 @@
     </header>
     <main class="page-content home">
         <h1>Skills en Contact</h1>
-        <p class="home-text">Hieronder vind je informatie over mijn vaardigheden en hoe je contact met mij kunt opnemen.</p>
-        <div class="skills-wrapper">
-            <section class="skills-container">
-                <h2>Technische vaardigheden</h2>
+        <p class="home-text">Mijn vaardigheden en manieren om contact met mij op te nemen.</p>
+        <div class="skills-contact-wrapper">
+            <section class="skills-container" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Vaardigheden</h2>
                 <ul>
-                    <li>Programmeertalen: HTML, CSS, JavaScript, PHP</li>
-                    <li>Frameworks en libraries: React, Node.js</li>
-                    <li>Databases: MySQL, MongoDB</li>
-                    <li>Tools en workflow: Git, Figma, Visual Studio Code</li>
+                    <li><strong>Programmeertalen:</strong><br>HTML, CSS, JavaScript, PHP</li>
+                    <li><strong>Frameworks en libraries:</strong><br>React, Node.js</li>
+                    <li><strong>Databases:</strong><br>MySQL, MongoDB</li>
+                    <li><strong>Tools en workflow:</strong><br>Git, Figma, Visual Studio Code</li>
                 </ul>
             </section>
-            <section class="skills-container">
-                <h2>Contactinformatie</h2>
-                <p>Email: djanovaneijk@gmail.com</p>
-                <p>Telefoon: 0618159654</p>
-                <a href="https://www.linkedin.com/in/djano-van-eijk-771b902a0/" target="_blank">Linkedin</a>
-                <p><a href="https://github.com/DjanoVanEijk" target="_blank">Github</a></p>
+            <section class="contact-container" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
+                <p><a href="mailto:djanovaneijk@gmail.com">djanovaneijk@gmail.com</a></p>
+                <p><a href="tel:0618159654">0618159654</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/DjanoVanEijk" target="_blank" rel="noopener noreferrer" aria-label="GitHub van Djano">
+                        <img src="../img/github.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/djano-van-eijk-771b902a0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn van Djano">
+                        <img src="../img/linkedin.png" alt="">
+                    </a>
+                </div>
             </section>
         </div>
+        <form class="contact-form" action="https://formspree.io/f/mjyyqqpp" method="POST">
+            <label for="naam">Naam</label>
+            <input id="naam" name="naam" type="text" required>
+
+            <label for="email">E-mailadres</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="bericht">Bericht</label>
+            <textarea id="bericht" name="bericht" rows="6" required></textarea>
+
+            <button type="submit">Verstuur bericht</button>
+        </form>
     </main>
     <footer></footer>
 </body>

@@ -97,7 +97,7 @@ transition: background-color 200ms ease, border-color 200ms ease;
     justify-content: center;
     gap: 2rem;
     border: 1px solid #444;
-    width: 800px;
+    width: 900px;
     margin:auto;
     padding: 2rem;
     border-radius:20px;
@@ -177,23 +177,112 @@ transition: background-color 200ms ease, border-color 200ms ease;
     text-align: center;
 }
 
-.skills-wrapper{
+.skills-contact-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: min(816px, 100%);
     gap: 1rem;
+    width: min(816px, 100%);
     flex-wrap: wrap;
 }
 
-.skills-container{
-    border: 1px solid #444;
-    width: min(400px, 100%);
-    min-height: 250px;
-    padding: 1.5rem;
-    text-align: center;
+.skills-container,
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     box-sizing: border-box;
+    width: min(400px, 100%);
+    min-height: 180px;
+    padding: 1.5rem;
+    border: 1px solid #444;
     border-radius: 20px;
+    text-align: center;
+}
+
+.skills-container h2,
+.contact-container h2 {
+    margin: 0;
+}
+
+.skills-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-container p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.social-links img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.contact-form {
+    box-sizing: border-box;
+    width: min(816px, 100%);
+    border: 1px solid #444;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 10px;
+    background-color: #303030;
+    color: white;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    justify-self: start;
+    padding: 0.65rem 1rem;
+    border: 1px solid #777;
+    border-radius: 10px;
+    background-color: #303030;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.contact-form button:hover,
+.contact-form button:focus-visible {
+    background-color: #444;
+    border-color: #aaa;
 }
 
 @media (max-width: 850px) {
@@ -248,4 +337,5 @@ transition: background-color 200ms ease, border-color 200ms ease;
     .container-icon {
         font-size: 2.5rem;
     }
+
 }
